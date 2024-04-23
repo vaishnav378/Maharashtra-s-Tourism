@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="guides.html">Guide</a></li>
+    <li><a href="qr_code.html">QR Code</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="contact_us.html">Contact Us</a></li>
+    <li><a href="login.html">LOGIN</a></li>
+  </ul>
+</head>
+  <body>
+    <div class="background">
+
+        <div class="qr-code-container">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://qrco.de/bdz7Yx " alt="QR Code">
+        <p>Scan the QR code to display the information about the Khandoba Temple</p>
+        </div>
+        <div class="qr-code-container">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://qrco.de/bdz7Yx " alt="QR Code">
+        <p>Scan the QR code </p>
+        </div>
+        <div class="qr-code-container">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://qrco.de/bdz7Yx " alt="QR Code">
+        <p>Scan the QR code </p>
+        </div>
+
+    </div>
+  </body>
+  </html>
+
+  <style>
+  ul{
+      float: right;
+      list-style-type: none;
+      margin-top: 25px;
+  }
+    ul li{
+      display: inline-flex;
+  }
+  
+  ul li a{
+      text-decoration: none;
+      font-weight: bold;
+      color: white;
+      padding: 5px 20px;
+      border: 1px solid transparent;
+      transition: 0.6s ease;
+  }
+  
+  ul li a:hover{
+      background-color: white;
+      color: #000;
+  }
+  ul li.active a{
+      background-color: #fff;
+      color: #000;
+  }
+  </style>
+
+<style>
+  
+  html {
+    background-image: url("https://algorand-developer-portal.tryprism.com/static/Posts/2021/05/12%2018:31/051221-QR_Code_generation.jpg?w=2220&cmd=resize_then_crop&height=1018&quality=70");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+    .qr-code-container {
+      text-align: center;
+      margin: 15px;
+      width: 150px;
+      display: inline-flexbox;
+}
+
+.qr-code-container img {
+  max-width: 100px;
+  height: auto;
+  
+}
+.qr-code-container p {
+  margin-top: 15px; /* Add some space between the QR code and the text */
+  font-weight: bold;
+  font-size: 14px; /* Adjust the font size as desired */
+  color:white; /* Adjust the text color as desired */
+}
+.background {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  
+}
+</style>  

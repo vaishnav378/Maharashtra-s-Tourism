@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    html {
+      background-image:linear-gradient(rgba(223, 223, 223, 0.823),rgba(0, 0, 0, 0.526)),url("https://www.pheunix.co.in/wp-content/uploads/2015/08/website-company-in-jodhpur.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+
+    ul{
+      float: right;
+      list-style-type: none;
+      margin-top: 25px;
+  }
+    ul li{
+      display: inline-flex;
+  }
+  
+  ul li a{
+      text-decoration: none;
+      font-weight: bold;
+      color: #060000;
+      padding: 5px 20px;
+      border: 1px solid transparent;
+      transition: 0.6s ease;
+  }
+  
+  ul li a:hover{
+      background-color: #fff;
+      color: #000;
+  }
+  ul li.active a{
+      background-color: #fff;
+      color: #000;
+  }
+
+  .services {
+        margin: -10px;
+        height: 405px;
+        width: 1415px;
+        padding: 110px 0;
+}
+
+.services h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.service {
+  position: relative;
+  width: 300px;
+  margin: 20px;
+  background-color: rgba(247, 247, 248, 0.294);
+  box-shadow: 0 5px 10px rgba(8, 0, 0, 0.904);
+  text-align: center;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.service h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.submenu {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: rgba(224, 226, 226, 0.684);
+  z-index: 1;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgb(0, 0, 0);
+}
+
+.submenu li {
+  margin-bottom: 10px;
+}
+
+.submenu a {
+  display: block;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
+}
+
+.service:hover .submenu {
+  display: block;
+}
+  </style>
+  <head>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="guides.html">Guide</a></li>
+      <li><a href="qr_code.html">QR Code</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact_us.html">Contact Us</a></li>
+      <li><a href="login.html">LOGIN</a></li>
+    </ul>
+  </head>
+  <body>
+    <section class="services">
+      <h2>Our Services</h2>
+      <div class="services-container">
+        
+        <div class="service">
+          <h3><a href="photographer.html">Photographers</a></h3>
+        </div>
+        <div class="service">
+          <h3><a href="hospital.html">Hospital Service</a></h3>
+        </div>
+        <div class="service">
+          <h3>Guided Tours</h3>
+          <ul class="submenu">
+            <li><a href="#">Historic Walking Tours</a></li>
+            <li><a href="#">Bus Tours</a></li>
+            <li><a href="#">Custom Tours</a></li>
+          </ul>
+        </div>
+        <div class="service">
+          <h3>Event Rentals</h3>
+          <ul class="submenu">
+            <li><a href="#">Weddings</a></li>
+            <li><a href="#">Corporate Events</a></li>
+            <li><a href="#">Private Parties</a></li>
+          </ul>
+        </div>
+        <div class="service">
+          <h3>Education Programs</h3>
+          <ul class="submenu">
+            <li><a href="#">K-12 Programs</a></li>
+            <li><a href="#">College Programs</a></li>
+            <li><a href="#">Adult Learning</a></li>
+          </ul>
+        </div>
+    </section>  
+  </body>
+</html>>
+

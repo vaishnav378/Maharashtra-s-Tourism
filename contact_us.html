@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+   
+      html {
+        background-image: url("https://www.cloud4c.com/sites/default/files/2022-07/cloud4c-company-contact-1Desktop.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+      
+      label {
+        color: rgb(217, 207, 12); /* Replace with your desired color */
+      }
+      
+      form {
+        max-width: 1000px;
+        margin-top: 120px;
+        margin-left: 150px;
+        display: inline-flex;
+        flex-direction: column;
+      }
+      
+      label {
+        font-size: 1.2em;
+        margin-bottom: 5px;
+      }
+      
+      input, textarea {
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid #f6f2f2cf;
+        font-size: 1.2em;
+      }
+      
+      textarea {
+        height: 150px;
+      }
+      
+      button[type="submit"] {
+        background-color: #12a0cc;
+        color: #f7f4f4;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.2em;
+        cursor: pointer;
+      }
+      
+      button[type="submit"]:hover {
+        background-color: #000303;
+      }
+
+      ul{
+        float: right;
+        list-style-type: none;
+        margin-top: 25px;
+    }
+      ul li{
+        display: inline-flex;
+    }
+    
+    ul li a{
+        text-decoration: none;
+        font-weight: bold; 
+        color: #faf8fa;
+        padding: 5px 20px;
+        border: 1px solid transparent;
+        transition: 0.6s ease;
+    }
+    
+    ul li a:hover{
+        background-color: #fff;
+        color: #000;
+    }
+    ul li.active a{
+        background-color: #fff;
+        color: #000;
+    }
+        </style>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="guides.html">Guide</a></li>
+    <li><a href="qr_code.html">QR Code</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="contact_us.html">Contact Us</a></li>
+    <li><a href="login.html">LOGIN</a></li>
+  </ul>
+  </head>
+  <body>
+  <div class="background">
+    <form action="mysql.php" method="post">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    
+      <label for="Mobile Number">Mobile Number:</label>
+      <input type="number" id="contact number" name="mobile_number" placeholder="Enter your Mobile/Contact Number" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" name="subject" placeholder="Enter subject" required>
+    
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+    
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  </body>
+</html>
